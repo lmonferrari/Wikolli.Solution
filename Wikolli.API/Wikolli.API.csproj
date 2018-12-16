@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="WikolliApp\app\models\composicao.ts" />
+    <None Remove="WikolliApp\app\models\produto.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="WikolliApp\app\services\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.Mysql" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="WikolliApp\app\models\composicao.ts" />
+    <TypeScriptCompile Include="WikolliApp\app\models\produto.ts" />
+  </ItemGroup>
+
+</Project>
