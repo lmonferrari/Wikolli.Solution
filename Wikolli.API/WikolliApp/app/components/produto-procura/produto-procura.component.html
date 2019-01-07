@@ -1,0 +1,13 @@
+<div id="search-component">
+  <h4>Pesquisa de produtos</h4>
+
+  <input class="form-control" #searchBox id="app-produto-procura" (input)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let produto of produtos$ | async">
+      <a routerLink="/api/composicao/{{produto.prO_CODIGO}}">
+        {{produto.prO_DESCRICAO}}
+      </a>
+    </li>
+  </ul>
+</div>

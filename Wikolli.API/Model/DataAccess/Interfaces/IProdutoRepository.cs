@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Wikolli.API.Model.Entity;
 
 namespace Wikolli.API.Model.DataAccess.Interfaces
@@ -7,5 +7,6 @@ namespace Wikolli.API.Model.DataAccess.Interfaces
     {
         List<Produtos> ListaProdutos();
         List<Produtos> ListaProdutosGrupo(int grupo);
+        List<Produtos> ListarProdutosDescricao(string descricao);
     }
 }

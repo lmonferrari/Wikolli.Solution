@@ -1,9 +1,9 @@
 export class Composicao {
-  pro_codigo: number;
-  com_unidade: string;
-  com_descricao: string;
-  com_quantidade: number;
-  com_valorunitario: number;
-  com_valortotal: number;
-  com_materiaprima: number;
+  prO_CODIGO: number;
+  coM_UNIDADE: string;
+  coM_DESCRICAO: string;
+  coM_QUANTIDADE: number;
+  coM_VALORUNITARIO: number;
+  coM_VALORTOTAL: number;
+  coM_MATERIAPRIMA: number;
 }

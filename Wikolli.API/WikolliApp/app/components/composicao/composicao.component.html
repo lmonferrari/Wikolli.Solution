@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xs-3">
+    <app-produto-procura></app-produto-procura>
+  </div>
+
+  <div class="col-xs-6">
+    <div class="table-responsive">
+      <table class="table table-hover" *ngIf="composicao">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+            <th>Unidade</th>
+            <th>Valor Unitário</th>
+            <th>Valor Total
+            <th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of composicao; let i = index">
+            <td>{{composicao[i].coM_DESCRICAO}}</td>
+            <td>{{composicao[i].coM_QUANTIDADE * quantityBox.value | number: '1.1-6'}}</td>
+            <td>{{composicao[i].coM_UNIDADE}}</td>
+            <td>{{composicao[i].coM_VALORUNITARIO | currency:'BRL':symbol:'1.1-2'}}</td>
+            <td>{{composicao[i].coM_VALORTOTAL * quantityBox.value | currency:'BRL':symbol:'1.1-2'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <h4>Quantidade da produção</h4>
+    <input class="form-control" value="1" #quantityBox (input)="update(quantityBox.value)" />
+  </div>
+</div>
+

@@ -6,13 +6,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="WikolliApp\app\app.component.spec.ts" />
+    <None Remove="WikolliApp\app\components\produto-procura\produto-procura.component.spec.ts" />
     <None Remove="WikolliApp\app\models\composicao.ts" />
     <None Remove="WikolliApp\app\models\produto.ts" />
+    <None Remove="WikolliApp\htmlpage.html" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="WikolliApp\app\components\" />
     <Folder Include="WikolliApp\app\services\" />
-    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\lib\bootstrap\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\lib\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\js\npm.js" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <title>Wikolli Alimentos - App</title>
+  <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        @RenderBody()
-    </div>
+
+  <div class="container-fluid">
+    <app-root></app-root>
+  </div>
+
+
+  <script src="~/lib/jquery/jquery.js"></script>
+  <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="~/WikolliApp/dist/polyfills.js"></script>
+  <script src="~/WikolliApp/dist/runtime.js"></script>
+  <script src="~/WikolliApp/dist/styles.js"></script>
+  <script src="~/WikolliApp/dist/vendor.js"></script>
+  <script src="~/WikolliApp/dist/main.js"></script>
 </body>
 </html>
+

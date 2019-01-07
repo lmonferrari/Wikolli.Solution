@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "WikolliDB":  "server=;userid=;password=;database="
+    "WikolliDB":  "server=192.168.25.33;userid=root;password=123;database=eficaz"
   }
 }
